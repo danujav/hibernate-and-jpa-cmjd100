@@ -9,7 +9,7 @@
 
     <!--26.4-->
     <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/nh_cmjd100?CreateDatabaseIfNotExist=true</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/nh_cmjd100?createDatabaseIfNotExist=true</property>
     <property name="hibernate.connection.username">root</property>
     <property name="hibernate.connection.password">Danu25412541@</property>
 
