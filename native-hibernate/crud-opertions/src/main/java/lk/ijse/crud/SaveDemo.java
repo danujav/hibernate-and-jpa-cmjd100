@@ -20,8 +20,10 @@ public class SaveDemo {
 
             Item i1 = new Item(1, "Choco", 450);
 
-            var id = session.save(i1);
-            System.out.println("id: " + id);
+//            var id = session.save(i1);  //5.x
+//            System.out.println("id: " + id);
+
+            session.persist(i1);    //6.x
 
             transaction.commit();
         }
