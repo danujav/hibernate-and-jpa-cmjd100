@@ -5,6 +5,7 @@ package lk.ijse.crud.entity;
     @created 7/1/23 - 12:12 PM   
 */
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
@@ -12,6 +13,7 @@ import jakarta.persistence.Id;
 public class Item {
     @Id
     private int code;
+    @Column(name = "item_desc", nullable = false, columnDefinition = "VARCHAR(200)")
     private String description;
     private double unitPrice;
 

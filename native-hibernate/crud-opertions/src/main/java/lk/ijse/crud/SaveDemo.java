@@ -18,7 +18,7 @@ public class SaveDemo {
 
             Transaction transaction = session.beginTransaction();
 
-            Item i1 = new Item(1, "Choco", 450);
+            Item i1 = new Item(4, "Rice", 500);
 
 //            var id = session.save(i1);  //5.x
 //            System.out.println("id: " + id);
