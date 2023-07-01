@@ -19,7 +19,10 @@ public class GetDemo {
             Transaction transaction = session.beginTransaction();
 
             Item i1 = session.get(Item.class, 5);
-            System.out.println(i1);
+            System.out.println("from get: " + i1);
+
+            Item i2 = session.find(Item.class, 4);
+            System.out.println("From find: " + i2);
 
             transaction.commit();
         }
