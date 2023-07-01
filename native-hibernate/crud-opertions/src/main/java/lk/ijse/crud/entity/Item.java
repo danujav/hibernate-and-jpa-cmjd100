@@ -49,4 +49,13 @@ public class Item {
     public void setUnitPrice(double unitPrice) {
         this.unitPrice = unitPrice;
     }
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                "code=" + code +
+                ", description='" + description + '\'' +
+                ", unitPrice=" + unitPrice +
+                '}';
+    }
 }
