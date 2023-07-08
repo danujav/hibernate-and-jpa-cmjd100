@@ -5,9 +5,7 @@ package lk.ijse.relationship.util;
     @created 7/1/23 - 12:04 PM   
 */
 
-import lk.ijse.relationship.entity.Employee;
-import lk.ijse.relationship.entity.Passenger;
-import lk.ijse.relationship.entity.Passport;
+import lk.ijse.relationship.entity.*;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
 import org.hibernate.boot.MetadataSources;
@@ -26,8 +24,10 @@ public class HibernateUtil {
 
         Metadata metadata = new MetadataSources(standardRegistry)
 //                .addAnnotatedClass(Employee.class)
-                .addAnnotatedClass(Passport.class)
-                .addAnnotatedClass(Passenger.class)
+                /*.addAnnotatedClass(Passport.class)
+                .addAnnotatedClass(Passenger.class)*/
+                .addAnnotatedClass(Owner.class)
+                .addAnnotatedClass(Pet.class)
                 .getMetadataBuilder()
                 .applyImplicitNamingStrategy(ImplicitNamingStrategyJpaCompliantImpl.INSTANCE)
                 .build();
