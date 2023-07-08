@@ -11,6 +11,7 @@
     <modules>
         <module>nh-bootstrapping</module>
         <module>crud-opertions</module>
+        <module>nh-relationships</module>
     </modules>
 
     <properties>
