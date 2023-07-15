@@ -51,7 +51,14 @@ public class HQLDemo {
             }*/
 
             //WHERE with LIKE
-            String hql = "FROM CustomerDetail WHERE name LIKE 'D%'";
+            /*String hql = "FROM CustomerDetail WHERE name LIKE 'D%'";
+            List<Customer> list = session.createQuery(hql).list();
+            for (Customer customer : list) {
+                System.out.println(customer);
+            }*/
+
+            //ORDER BY Clause
+            String hql = "FROM CustomerDetail ORDER BY salary DESC";
             List<Customer> list = session.createQuery(hql).list();
             for (Customer customer : list) {
                 System.out.println(customer);
