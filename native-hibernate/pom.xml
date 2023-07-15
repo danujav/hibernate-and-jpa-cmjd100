@@ -13,6 +13,7 @@
         <module>crud-opertions</module>
         <module>nh-relationships</module>
         <module>fx-hibernate</module>
+        <module>hb-query-language</module>
     </modules>
 
     <properties>
