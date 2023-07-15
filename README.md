@@ -4,6 +4,7 @@
 - [Hibernate ORM 6.2.6 Final User Guide](https://docs.jboss.org/hibernate/stable/orm/userguide/html_single/Hibernate_User_Guide.html)
 
 ### Key Sections. 🚩
+- [Hibernate Diagram.pdf](/hibernate-diagrams.pdf)
 - [Native hibernate bootstrapping](/native-hibernate/nh-bootstrapping/)
 - [CRUD operations](/native-hibernate/crud-opertions)
 - [Relationships (One2One | One2Many | Many2Many)](/native-hibernate/nh-relationships)
