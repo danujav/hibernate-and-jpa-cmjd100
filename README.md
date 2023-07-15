@@ -71,7 +71,7 @@ public class HibernateUtil {    //Session Factory
     <property name="hibernate.connection.password">password</property>
     <property name="hibernate.show_sql">true</property>
     <property name="hibernate.format_sql">true</property>
-<!--    <property name="hibernate.hbm2ddl.auto">update</property>-->
+    <property name="hibernate.hbm2ddl.auto">update</property>-->
   </session-factory>
 </hibernate-configuration>
 ```
