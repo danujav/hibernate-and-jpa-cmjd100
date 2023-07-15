@@ -14,8 +14,9 @@
 1. Install Git on your computer: https://git-scm.com/downloads
 2. Then on your terminal. Run 👇
 
-
-    git clone https://github.com/DanujaV/hibernate-and-jpa-cmjd100.git
+```sh
+git clone https://github.com/DanujaV/hibernate-and-jpa-cmjd100.git
+```
 
 ### License. 🛡️
 Copyright 2023 CMJD. All Rights Reserved.
