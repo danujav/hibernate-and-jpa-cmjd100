@@ -12,6 +12,7 @@
         <module>nh-bootstrapping</module>
         <module>crud-opertions</module>
         <module>nh-relationships</module>
+        <module>fx-hibernate</module>
     </modules>
 
     <properties>
