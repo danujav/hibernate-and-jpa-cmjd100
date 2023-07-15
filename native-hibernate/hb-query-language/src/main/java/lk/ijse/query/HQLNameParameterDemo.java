@@ -21,7 +21,7 @@ public class HQLNameParameterDemo {
             /*Customer customer = session.find(Customer.class, "C001");
             System.out.println(customer);*/
             //name parameters
-            String name = "Supun";
+            /*String name = "Supun";
             String hql = "FROM CustomerDetail WHERE name = :cName";
 
             Query query = session.createQuery(hql);
@@ -30,7 +30,7 @@ public class HQLNameParameterDemo {
             List<Customer> list = query.list();
             for (Customer customer : list) {
                 System.out.println(customer);
-            }
+            }*/
         }
     }
 }
