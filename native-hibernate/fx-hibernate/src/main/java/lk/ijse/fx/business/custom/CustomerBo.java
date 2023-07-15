@@ -5,8 +5,9 @@ package lk.ijse.fx.business.custom;
     @created 7/15/23 - 2:02 PM   
 */
 
+import lk.ijse.fx.business.SuperBo;
 import lk.ijse.fx.dto.CustomerDto;
 
-public interface CustomerBo {
+public interface CustomerBo extends SuperBo {
     boolean saveCustomer(CustomerDto dto) throws Exception;
 }
