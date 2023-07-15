@@ -21,7 +21,7 @@ git clone https://github.com/DanujaV/hibernate-and-jpa-cmjd100.git
 
 ###### Session Factory
 ```sh
-import lk.ijse.query.entity.Customer;
+//import lk.ijse.query.entity.Customer;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
 import org.hibernate.boot.MetadataSources;
@@ -39,7 +39,7 @@ public class HibernateUtil {    //Session Factory
                 .build();
 
         Metadata metadata = new MetadataSources(standardRegistry)
-                .addAnnotatedClass(Customer.class)
+        //       .addAnnotatedClass(Customer.class)
                 .getMetadataBuilder()
                 .applyImplicitNamingStrategy(ImplicitNamingStrategyJpaCompliantImpl.INSTANCE)
                 .build();
@@ -64,20 +64,13 @@ public class HibernateUtil {    //Session Factory
     "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
   <session-factory>
-    <!--26.2-->
     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-
-    <!--26.4-->
     <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
     <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/nh_cmjd100?createDatabaseIfNotExist=true</property>
     <property name="hibernate.connection.username">root</property>
     <property name="hibernate.connection.password">password</property>
-
-    <!--26.10-->
     <property name="hibernate.show_sql">true</property>
     <property name="hibernate.format_sql">true</property>
-
-    <!--26.15-->
 <!--    <property name="hibernate.hbm2ddl.auto">update</property>-->
   </session-factory>
 </hibernate-configuration>
@@ -85,13 +78,13 @@ public class HibernateUtil {    //Session Factory
 OR
 - Resource Bundle Configuration
 ```sh
-#key=value
+#key=value pairing
 
 hibernate.dialect=org.hibernate.dialect.MySQLDialect
 hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver
 hibernate.connection.url=jdbc:mysql://localhost:3306/cmjd100_thogakade?createDatabaseIfNotExist=true
 hibernate.connection.username=root
-hibernate.connection.password=Danu25412541@
+hibernate.connection.password=password
 hibernate.show_sql=true
 hibernate.format_sql=true
 hibernate.hbm2ddl.auto=update
